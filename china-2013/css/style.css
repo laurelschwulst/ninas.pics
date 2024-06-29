@@ -1,0 +1,290 @@
+html {
+  height: 100%;
+}
+
+body {
+  /* margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.25; */
+  /* font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif; */
+}
+
+a {
+  /* text-decoration: none; */
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+figure figcaption {
+  padding: 0;
+  padding-top: 0.2em;
+  caption-side: bottom;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.slides {
+  position: relative;
+}
+
+.slides figure {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.slides figure a,
+.slides figure span.img {
+  display: block;
+  flex: 1;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* cursor: s-resize; */
+}
+
+.slides figure:last-child a {
+  /* cursor: n-resize; */
+}
+
+.slides figure figcaption {
+  padding: 1em 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slides.entrance {
+  background: black;
+  color: white;
+  /* padding: 60px; */
+}
+
+.slides.entrance figure {
+  /* height: calc(100vh - 120px); */
+}
+
+#gallery {
+  text-align: center;
+  margin: 4.5em 0 7.5em;
+  margin: 2em;
+  padding: 40px 0 0 40px;
+  min-height: 100vh;
+}
+
+#gallery img {
+  width: 500px;
+  width: 150px;
+  vertical-align: middle;
+  margin: 0 40px 40px 0;
+}
+
+#gallery img.portrait {
+  width: 370px;
+  width: 115px;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, red, yellow, blue, red);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+span.one {
+  left: 0;
+  width: 20%;
+  height: 25%;
+}
+
+span.two {
+  left: 0;
+  top: 25%;
+  width: 20%;
+  height: 25%;
+}
+
+span.three {
+  left: 0;
+  top: 50%;
+  width: 20%;
+  height: 25%;
+}
+
+span.four {
+  left: 0;
+  top: 75%;
+  width: 20%;
+  height: 25%;
+}
+
+span.five {
+  left: 20%;
+  top: 0;
+  width: 20%;
+  height: 25%;
+}
+
+span.six {
+  left: 20%;
+  top: 25%;
+  width: 20%;
+  height: 25%;
+}
+
+span.seven {
+  left: 20%;
+  top: 50%;
+  width: 20%;
+  height: 25%;
+}
+
+span.eight {
+  left: 20%;
+  top: 75%;
+  width: 20%;
+  height: 25%;
+}
+
+span.nine {
+  left: 40%;
+  top: 0;
+  width: 20%;
+  height: 25%;
+}
+
+a.ten {
+  left: 40%;
+  top: 25%;
+  width: 20% !important;
+  height: 25%;
+  flex: none;
+}
+
+a.ten:hover {
+  border-radius: 50%;
+}
+
+span.ten:hover .left-eye,
+span.ten:hover .right-eye {
+  display: block;
+}
+
+span.eleven {
+  left: 40%;
+  top: 50%;
+  width: 20%;
+  height: 25%;
+}
+
+span.twelve {
+  left: 40%;
+  top: 75%;
+  width: 20%;
+  height: 25%;
+}
+
+span.thirteen {
+  left: 60%;
+  top: 0;
+  width: 20%;
+  height: 25%;
+}
+
+span.fourteen {
+  left: 60%;
+  top: 25%;
+  width: 20%;
+  height: 25%;
+}
+
+span.fifteen {
+  left: 60%;
+  top: 50%;
+  width: 20%;
+  height: 25%;
+}
+
+span.sixteen {
+  left: 60%;
+  top: 75%;
+  width: 20%;
+  height: 25%;
+}
+
+span.seventeen {
+  left: 80%;
+  top: 0;
+  width: 20%;
+  height: 25%;
+}
+
+span.eighteen {
+  left: 80%;
+  top: 25%;
+  width: 20%;
+  height: 25%;
+}
+
+span.nineteen {
+  left: 80%;
+  top: 50%;
+  width: 20%;
+  height: 25%;
+}
+
+span.twenty {
+  left: 80%;
+  top: 75%;
+  width: 20%;
+  height: 25%;
+}
+
+#entrance-image span,
+#entrance-image a {
+  display: block;
+  position: absolute;
+  border: 3px solid transparent;
+}
+
+#entrance-image span:hover,
+#entrance-image a:hover {
+  border-color: lime;
+}
+
+.slides figure span.img {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+
+  .slides figure figcaption {
+    padding: 1em;
+  }
+}
